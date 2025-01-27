@@ -52,3 +52,4 @@ manage.py
 # example database
 drf_example
 *.pyc
+/airlinemanagement/airlinemanagement/__pycache__
