@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "b1462615-9067-4be1-9751-ebc3b03eaa63",
+		"name": "Reservations",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41553976"
+	},
+	"item": [
+		{
+			"name": "List Reservations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{reservationUrl}}",
+					"host": [
+						"{{reservationUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reservation Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{reservationUrl}}/:id",
+					"host": [
+						"{{reservationUrl}}"
+					],
+					"path": [
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Reservation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"passenger_name\": \"john\",\r\n        \"passenger_email\": \"haha@ghas.com\",\r\n        \"reservation_code\": \"9BFAS\",\r\n        \"status\": true,\r\n        \"created_at\": \"2025-01-27T22:43:21.484887Z\",\r\n        \"flight\": 6\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{reservationUrl}}/",
+					"host": [
+						"{{reservationUrl}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Specific Reservation",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passenger_name\": \"john\",\r\n    \"passenger_email\": \"haha@ghas.com\",\r\n    \"reservation_code\": \"9BFAS\",\r\n    \"status\": true,\r\n    \"created_at\": \"2025-01-27T22:43:21.484887Z\",\r\n    \"flight\": 6\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{reservationUrl}}/:id/",
+					"host": [
+						"{{reservationUrl}}"
+					],
+					"path": [
+						":id",
+						""
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "reservationUrl",
+			"value": "http://127.0.0.1:8000/api/reservations",
+			"type": "default"
+		}
+	]
+}

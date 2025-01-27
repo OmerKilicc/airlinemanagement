@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "09cd2a06-1033-4fa2-982b-a562281db745",
+		"name": "Airplanes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41553976"
+	},
+	"item": [
+		{
+			"name": "List Airplanes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "{{airplanesUrl}}",
+					"host": [
+						"{{airplanesUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Airplane Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{airplanesUrl}}/:id",
+					"host": [
+						"{{airplanesUrl}}"
+					],
+					"path": [
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flights Of Specific Airplane",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{airplanesUrl}}/:id/flights",
+					"host": [
+						"{{airplanesUrl}}"
+					],
+					"path": [
+						":id",
+						"flights"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Airplane",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tail_number\": \"Jasx\",\r\n    \"model\": \"Jet 777\",\r\n    \"capacity\": 22,\r\n    \"production_year\": 2023,\r\n    \"status\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{airplanesUrl}}/",
+					"host": [
+						"{{airplanesUrl}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Specific Airplane",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"tail_number\": \"Zinchenko\",\r\n        \"model\": \"Boeing 123\",\r\n        \"capacity\": 333,\r\n        \"production_year\": 2023,\r\n        \"status\": true\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{airplanesUrl}}/:id/",
+					"host": [
+						"{{airplanesUrl}}"
+					],
+					"path": [
+						":id",
+						""
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Specific Airplane",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{airplanesUrl}}/:id/",
+					"host": [
+						"{{airplanesUrl}}"
+					],
+					"path": [
+						":id",
+						""
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "airplanesUrl",
+			"value": "http://127.0.0.1:8000/api/airplanes/",
+			"type": "default"
+		}
+	]
+}

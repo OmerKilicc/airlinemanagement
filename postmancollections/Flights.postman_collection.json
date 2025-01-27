@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "9016d358-a7e6-457d-b90b-ac31570b1605",
+		"name": "Flights",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41553976"
+	},
+	"item": [
+		{
+			"name": "List Flights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{flightUrl}}",
+					"host": [
+						"{{flightUrl}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flight Detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{flightUrl}}/:id",
+					"host": [
+						"{{flightUrl}}"
+					],
+					"path": [
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reservations Of Specific Flight",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{flightUrl}}/:id/reservations",
+					"host": [
+						"{{flightUrl}}"
+					],
+					"path": [
+						":id",
+						"reservations"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Flight",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"flight_number\": \"TES32\",\r\n    \"departure\": \"Istanbul\",\r\n    \"destination\": \"Ankara\",\r\n    \"departure_time\": \"2025-01-28T01:40:00Z\",\r\n    \"arrival_time\": \"2025-01-29T01:41:00Z\",\r\n    \"airplane\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{flightUrl}}/",
+					"host": [
+						"{{flightUrl}}"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Specific Flight",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"flight_number\": \"34IST\",\r\n    \"departure\": \"Istanbul\",\r\n    \"destination\": \"Ankara\",\r\n    \"departure_time\": \"2025-01-28T01:40:00Z\",\r\n    \"arrival_time\": \"2025-01-29T01:41:00Z\",\r\n    \"airplane\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{flightUrl}}/:id/",
+					"host": [
+						"{{flightUrl}}"
+					],
+					"path": [
+						":id",
+						""
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Specific Flight",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{flightUrl}}/:id/",
+					"host": [
+						"{{flightUrl}}"
+					],
+					"path": [
+						":id",
+						""
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "flightUrl",
+			"value": "http://127.0.0.1:8000/api/flights/",
+			"type": "default"
+		}
+	]
+}
