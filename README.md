@@ -16,11 +16,17 @@ A Django REST API-based airline management system that handles airplanes, flight
   - Handle flight timings
   - Associate flights with specific airplanes
   - View all reservations for a specific flight
+  - Advanced filtering by date, location, and price range
+  - Search flights by departure and destination cities
 
 - **Reservation System**
   - Create and manage passenger reservations
   - Automatic reservation code generation
-  - Email confirmation system (currently disabled for development)
+  - Comprehensive email notification system
+    - Booking confirmation emails
+    - Flight reminder emails
+    - Flight status update notifications
+    - Cancellation confirmation emails
   - Prevent overbooking with capacity checks
 
 ## API Endpoints
@@ -35,6 +41,12 @@ A Django REST API-based airline management system that handles airplanes, flight
 
 ### Flights
 - `GET /api/flights/` - List all flights
+  - Query Parameters:
+    - `departure`: Filter by departure city
+    - `destination`: Filter by destination city
+    - `date_from`: Filter flights after this date
+    - `date_to`: Filter flights before this date
+
 - `POST /api/flights/` - Create a new flight
 - `GET /api/flights/{id}/` - Retrieve flight details
 - `PATCH /api/flights/{id}/` - Update flight details
