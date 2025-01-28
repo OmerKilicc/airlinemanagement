@@ -22,11 +22,8 @@ A Django REST API-based airline management system that handles airplanes, flight
 - **Reservation System**
   - Create and manage passenger reservations
   - Automatic reservation code generation
-  - Comprehensive email notification system
+  - Email notification system
     - Booking confirmation emails
-    - Flight reminder emails
-    - Flight status update notifications
-    - Cancellation confirmation emails
   - Prevent overbooking with capacity checks
 
 ## API Endpoints
@@ -64,6 +61,7 @@ A Django REST API-based airline management system that handles airplanes, flight
 - Python 3.13
 - Django 5.1.5
 - Django REST Framework
+- Django Filters
 - SQLite (Database)
 
 ## Installation
