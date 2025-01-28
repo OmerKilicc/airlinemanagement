@@ -36,7 +36,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": ""
+							"value": "5"
 						}
 					]
 				}
@@ -60,7 +60,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": ""
+							"value": "5"
 						}
 					]
 				}
@@ -101,7 +101,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"flight_number\": \"LON38\",\r\n    \"departure\": \"London\",\r\n    \"destination\": \"Paris\",\r\n    \"departure_time\": \"2025-01-28T01:40:00Z\",\r\n    \"arrival_time\": \"2025-01-29T01:41:00Z\",\r\n    \"airplane\": 7\r\n}",
+					"raw": "{\r\n    \"flight_number\": \"TEST0\",\r\n    \"departure\": \"London\",\r\n    \"destination\": \"Paris\",\r\n    \"departure_time\": \"2025-01-28T01:40:00Z\",\r\n    \"arrival_time\": \"2025-01-29T01:41:00Z\",\r\n    \"airplane\": 7\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -127,7 +127,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"flight_number\": \"34IST\",\r\n    \"departure\": \"Istanbul\",\r\n    \"destination\": \"Ankara\",\r\n    \"departure_time\": \"2025-01-28T01:40:00Z\",\r\n    \"arrival_time\": \"2025-01-29T01:41:00Z\",\r\n    \"airplane\": 7\r\n}",
+					"raw": "{\r\n    \"flight_number\": \"24SA\",\r\n    \"departure\": \"Istanbul\",\r\n    \"destination\": \"Ankara\",\r\n    \"departure_time\": \"2025-01-28T01:40:00Z\",\r\n    \"arrival_time\": \"2025-01-29T01:41:00Z\",\r\n    \"airplane\": 7\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -146,7 +146,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": ""
+							"value": "5"
 						}
 					]
 				}
@@ -170,7 +170,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": ""
+							"value": "6"
 						}
 					]
 				}

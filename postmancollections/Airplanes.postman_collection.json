@@ -50,7 +50,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": ""
+							"value": "4"
 						}
 					]
 				}
@@ -74,7 +74,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": ""
+							"value": "4"
 						}
 					]
 				}
@@ -88,7 +88,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"tail_number\": \"Jasx\",\r\n    \"model\": \"Jet 777\",\r\n    \"capacity\": 22,\r\n    \"production_year\": 2023,\r\n    \"status\": true\r\n}",
+					"raw": "{\r\n    \"tail_number\": \"TEST-42\",\r\n    \"model\": \"Jet 777\",\r\n    \"capacity\": 22,\r\n    \"production_year\": 2023,\r\n    \"status\": true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -114,7 +114,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"tail_number\": \"Zinchenko\",\r\n        \"model\": \"Boeing 123\",\r\n        \"capacity\": 333,\r\n        \"production_year\": 2023,\r\n        \"status\": true\r\n    }",
+					"raw": "{\r\n        \"tail_number\": \"FTRX\",\r\n        \"model\": \"Boeing 123\",\r\n        \"capacity\": 333,\r\n        \"production_year\": 2023,\r\n        \"status\": true\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -133,7 +133,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": ""
+							"value": "4"
 						}
 					]
 				}
@@ -157,7 +157,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": ""
+							"value": "6"
 						}
 					]
 				}
