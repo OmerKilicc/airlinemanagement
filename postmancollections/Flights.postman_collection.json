@@ -68,13 +68,40 @@
 			"response": []
 		},
 		{
+			"name": "FilterFlights",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{flightUrl}}/?departure=London&destination=Paris",
+					"host": [
+						"{{flightUrl}}"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "departure",
+							"value": "London"
+						},
+						{
+							"key": "destination",
+							"value": "Paris"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Add Flight",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"flight_number\": \"TES32\",\r\n    \"departure\": \"Istanbul\",\r\n    \"destination\": \"Ankara\",\r\n    \"departure_time\": \"2025-01-28T01:40:00Z\",\r\n    \"arrival_time\": \"2025-01-29T01:41:00Z\",\r\n    \"airplane\": 7\r\n}",
+					"raw": "{\r\n    \"flight_number\": \"LON38\",\r\n    \"departure\": \"London\",\r\n    \"destination\": \"Paris\",\r\n    \"departure_time\": \"2025-01-28T01:40:00Z\",\r\n    \"arrival_time\": \"2025-01-29T01:41:00Z\",\r\n    \"airplane\": 7\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
