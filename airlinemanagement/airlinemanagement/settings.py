@@ -131,3 +131,12 @@ REST_FRAMEWORK = {
         'django_filters.rest_framework.DjangoFilterBackend',
     ),
 }
+
+# Email settings
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # Development only
+EMAIL_HOST = 'localhost'  # Change this in production
+EMAIL_PORT = 25  # Change this in production
+EMAIL_USE_TLS = False  # Change this in production
+EMAIL_HOST_USER = ''  # Change this in production
+EMAIL_HOST_PASSWORD = ''  # Change this in production
+DEFAULT_FROM_EMAIL = 'no-reply@airline.com'

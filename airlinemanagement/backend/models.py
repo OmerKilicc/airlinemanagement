@@ -41,7 +41,7 @@ class Reservation(models.Model):
             raise ValidationError("The flight is fully booked.")
         super().save(*args, **kwargs)
         # Send confirmation email
-        #self.send_confirmation_email()
+        self.send_confirmation_email()
 
     @staticmethod
     def generate_reservation_code(length=5):
