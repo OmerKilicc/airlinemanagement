@@ -43,7 +43,6 @@ class Reservation(models.Model):
         # Send confirmation email
         self.send_confirmation_email()
 
-    @staticmethod
     def generate_reservation_code(length=5):
         characters = string.ascii_uppercase + string.digits
         return ''.join(random.choices(characters, k=length))
@@ -59,7 +58,7 @@ class Reservation(models.Model):
             f"Arrival: {self.flight.arrival_time}\n\n"
             "Thank you for choosing our service."
         )
-        send_mail(subject, message, 'no-reply@airline.com', [self.passenger_email])
+        send_mail(subject, message, DEFAULT_FROM_EMAIL, [self.passenger_email])
 
     def __str__(self):
         return f"Reservation {self.reservation_code} for {self.passenger_name}"
